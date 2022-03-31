@@ -3,8 +3,8 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-product = input("Enter product name")
-driver= webdriver.chrome(ChromeDriverManager().install())
+product = input("Enter product name:")
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 driver.get("https://www.flipkart.com/")
 time.sleep(1)
